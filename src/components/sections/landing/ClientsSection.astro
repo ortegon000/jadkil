@@ -1,4 +1,5 @@
 ---
+import {Image} from 'astro:assets';
 // Define props from Astro
 const { title, subTitle, partners } = Astro.props;
 
@@ -40,8 +41,8 @@ interface Props {
     <!-- Clients Group SVGs -->
     {
       partners.map((partner) => (
-        <a href={partner.href} target="_blank" rel="noopener noreferrer">
-              <div set:html={partner.icon} />
+        <a href={partner.href} target="_blank" rel="noopener noreferrer" class="bg-white/10 rounded-lg p-2 h-28 w-full flex items-center justify-center">
+            <Image src={partner.icon} alt={partner.name} class="w-full h-full object-contain" />
         </a>
       ))
     }

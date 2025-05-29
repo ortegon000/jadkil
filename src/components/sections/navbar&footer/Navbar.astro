@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 //Import relevant dependencies
 import ThemeIcon from "@components/ThemeIcon.astro";
 import NavLink from "@components/ui/links/NavLink.astro";
@@ -6,11 +8,14 @@ import Authentication from "../misc/Authentication.astro";
 import enStrings from "@utils/navigation.ts";
 import frStrings from "@utils/fr/navigation.ts";
 import BrandLogo from "@components/BrandLogo.astro";
+import Logo from "@assets/images/jadkil-logo.webp";
 import LanguagePicker from "@components/ui/LanguagePicker.astro";
 
 // Select the correct translation based on the page's lang prop:
-const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
-const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
+// const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
+// const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
+const strings = enStrings;
+const homeUrl = "/";
 ---
 
 <!-- Main header component -->
@@ -29,7 +34,7 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
         href={homeUrl}
         aria-label="Brand"
       >
-        <BrandLogo class="h-auto w-24" />
+        <Image src={Logo} alt="Jadkil Logo" class="h-auto w-24" />
       </a>
       <!-- Collapse toggle for smaller screens -->
       <div class="ml-auto mr-5 md:hidden">
@@ -71,11 +76,13 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
           </svg>
         </button>
       </div>
+
       <!-- ThemeIcon component specifically for smaller screens -->
       <span class="inline-block md:hidden">
         <ThemeIcon />
       </span>
     </div>
+    
     <!-- Contains navigation links -->
     <div
       id="navbar-collapse-with-animation"
@@ -90,8 +97,10 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
           <NavLink url={link.url} name={link.name} />
         ))}
 
-        <Authentication />
-        <LanguagePicker />
+        <!-- <Authentication />
+
+        <LanguagePicker /> -->
+        
         <!-- ThemeIcon component specifically for larger screens -->
         <span class="hidden md:inline-block">
           <ThemeIcon />
@@ -100,6 +109,7 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
     </div>
   </nav>
 </header>
+
 <!-- Theme Appearance script to manage light/dark modes -->
 <script is:inline>
   const HSThemeAppearance = {

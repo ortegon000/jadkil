@@ -84,6 +84,54 @@ export const Icons = {
     strokeLinejoin: "round",
     stroke: "currentColor",
   },
+  shieldUser: {
+    paths: [
+      {
+        d: "M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,3.18L19,6.3V11.22C19,12.92 18.5,14.65 17.65,16.17C16,14.94 13.26,14.5 12,14.5C10.74,14.5 8,14.94 6.35,16.17C5.5,14.65 5,12.92 5,11.22V6.3L12,3.18M12,6A3.5,3.5 0 0,0 8.5,9.5A3.5,3.5 0 0,0 12,13A3.5,3.5 0 0,0 15.5,9.5A3.5,3.5 0 0,0 12,6M12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8M12,16.5C13.57,16.5 15.64,17.11 16.53,17.84C15.29,19.38 13.7,20.55 12,21C10.3,20.55 8.71,19.38 7.47,17.84C8.37,17.11 10.43,16.5 12,16.5Z",
+      },
+    ],
+    class: "size-8 shrink-0 text-neutral-700 hs-tab-active:text-orange-400 dark:text-neutral-300 dark:hs-tab-active:text-orange-300 md:size-12",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+  dolly: {
+    paths: [
+      {
+        d: "M11.97,19.88C10.93,20.26 9.78,19.72 9.4,18.69C9,17.65 9.55,16.5 10.59,16.13C11.63,15.75 12.78,16.28 13.16,17.31C13.54,18.35 13,19.5 11.97,19.88M9.9,14.25C7.83,15 6.76,17.3 7.5,19.38C8.28,21.45 10.58,22.5 12.66,21.75C14.73,21 15.79,18.7 15.04,16.63C14.28,14.55 11.97,13.5 9.9,14.25M15.94,4.58L9.37,7L10.75,10.74L17.32,8.33M20.32,13.62L15.54,15.37C15.71,15.66 15.85,15.96 15.97,16.28C16.09,16.6 16.17,16.93 16.22,17.25L21,15.5M19.54,8.58L11.09,11.68L11.58,13C12.83,13.09 14,13.64 14.89,14.55L20.92,12.34M2,2V4H5.09L8.66,13.75C8.94,13.57 9.24,13.43 9.56,13.31C9.88,13.19 10.21,13.11 10.53,13.06L6.5,2",
+      },
+    ],
+    class: "size-8 shrink-0 text-neutral-700 hs-tab-active:text-orange-400 dark:text-neutral-300 dark:hs-tab-active:text-orange-300 md:size-12",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+  dashboardMonitor: {
+    paths: [
+      {
+        d: "M21,16V4H3V16H21M21,2A2,2 0 0,1 23,4V16A2,2 0 0,1 21,18H14V20H16V22H8V20H10V18H3C1.89,18 1,17.1 1,16V4C1,2.89 1.89,2 3,2H21M5,6H14V11H5V6M15,6H19V8H15V6M19,9V14H15V9H19M5,12H9V14H5V12M10,12H14V14H10V12Z",
+      },
+    ],
+    class: "size-8 shrink-0 text-neutral-700 hs-tab-active:text-orange-400 dark:text-neutral-300 dark:hs-tab-active:text-orange-300 md:size-12",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
   arrowUp: {
     paths: [
       {
@@ -99,6 +147,63 @@ export const Icons = {
     viewBox: "0 0 24 24",
     fill: "none",
     strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+
+  motorBike: {
+    paths: [
+      {
+        d: "M17.42,10L13.41,6H9V8H12.59L14.59,10H6.5C4,10 2,12 2,14.5C2,17 4,19 6.5,19C8.72,19 10.56,17.38 10.92,15.27L13.04,14C13,14.17 13,14.33 13,14.5C13,17 15,19 17.5,19C20,19 22,17 22,14.5C22,12 20,10 17.5,10M8.84,15.26C8.5,16.27 7.58,17 6.47,17C5.09,17 3.97,15.88 3.97,14.5C3.97,13.12 5.09,12 6.47,12C7.59,12 8.5,12.74 8.84,13.75H6V15.25L8.84,15.26M17.47,17C16.09,17 14.97,15.88 14.97,14.5C14.97,13.12 16.09,12 17.47,12A2.5,2.5 0 0,1 19.97,14.5A2.5,2.5 0 0,1 17.47,17Z",
+      },
+    ],
+    class: "mt-1 size-12 shrink-0 text-red-600 dark:text-red-500",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+  package: {
+    paths: [
+      {
+        d: "M12 2C11.8 2 11.6 2.1 11.4 2.2L3.5 6.6C3.2 6.8 3 7.1 3 7.5V16.5C3 16.9 3.2 17.2 3.5 17.4L11.4 21.8C11.6 21.9 11.8 22 12 22S12.4 21.9 12.6 21.8L13.5 21.3C13.2 20.7 13.1 20 13 19.3V12.6L19 9.2V13C19.7 13 20.4 13.1 21 13.3V7.5C21 7.1 20.8 6.8 20.5 6.6L12.6 2.2C12.4 2.1 12.2 2 12 2M12 4.2L18 7.5L16 8.6L10.1 5.2L12 4.2M8.1 6.3L14 9.8L12 10.9L6 7.5L8.1 6.3M5 9.2L11 12.6V19.3L5 15.9V9.2M21.3 15.8L17.7 19.4L16.1 17.8L15 19L17.8 22L22.6 17.2L21.3 15.8Z"
+      }
+    ],
+    class: "mt-1 size-12 shrink-0 text-red-600 dark:text-red-500 stroke-1",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+  truck: {
+    paths: [{
+      d: "M18 18.5C18.83 18.5 19.5 17.83 19.5 17C19.5 16.17 18.83 15.5 18 15.5C17.17 15.5 16.5 16.17 16.5 17C16.5 17.83 17.17 18.5 18 18.5M19.5 9.5H17V12H21.46L19.5 9.5M6 18.5C6.83 18.5 7.5 17.83 7.5 17C7.5 16.17 6.83 15.5 6 15.5C5.17 15.5 4.5 16.17 4.5 17C4.5 17.83 5.17 18.5 6 18.5M20 8L23 12V17H21C21 18.66 19.66 20 18 20C16.34 20 15 18.66 15 17H9C9 18.66 7.66 20 6 20C4.34 20 3 18.66 3 17H1V6C1 4.89 1.89 4 3 4H17V8H20M3 6V15H3.76C4.31 14.39 5.11 14 6 14C6.89 14 7.69 14.39 8.24 15H15V6H3M5 10.5L6.5 9L8 10.5L11.5 7L13 8.5L8 13.5L5 10.5Z"
+    }],
+    class: "mt-1 size-12 shrink-0 text-red-600 dark:text-red-500 stroke-1",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+
+  // <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-star-outline</title><path d="M15,4A4,4 0 0,1 19,8A4,4 0 0,1 15,12A4,4 0 0,1 11,8A4,4 0 0,1 15,4M15,5.9A2.1,2.1 0 0,0 12.9,8A2.1,2.1 0 0,0 15,10.1C16.16,10.1 17.1,9.16 17.1,8C17.1,6.84 16.16,5.9 15,5.9M15,13C17.67,13 23,14.33 23,17V20H7V17C7,14.33 12.33,13 15,13M15,14.9C12,14.9 8.9,16.36 8.9,17V18.1H21.1V17C21.1,16.36 17.97,14.9 15,14.9M5,13.28L2.5,14.77L3.18,11.96L1,10.08L3.87,9.83L5,7.19L6.11,9.83L9,10.08L6.8,11.96L7.45,14.77L5,13.28Z" /></svg>
+  personStar: {
+    paths: [
+      {
+        d: "M15,4A4,4 0 0,1 19,8A4,4 0 0,1 15,12A4,4 0 0,1 11,8A4,4 0 0,1 15,4M15,5.9A2.1,2.1 0 0,0 12.9,8A2.1,2.1 0 0,0 15,10.1C16.16,10.1 17.1,9.16 17.1,8C17.1,6.84 16.16,5.9 15,5.9M15,13C17.67,13 23,14.33 23,17V20H7V17C7,14.33 12.33,13 15,13M15,14.9C12,14.9 8.9,16.36 8.9,17V18.1H21.1V17C21.1,16.36 17.97,14.9 15,14.9M5,13.28L2.5,14.77L3.18,11.96L1,10.08L3.87,9.83L5,7.19L6.11,9.83L9,10.08L6.8,11.96L7.45,14.77L5,13.28Z",
+      }
+    ],
+    class: "mt-1 size-12 shrink-0 text-red-600 dark:text-red-500 stroke-1",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
     strokeLinecap: "round",
     strokeLinejoin: "round",
     stroke: "currentColor",

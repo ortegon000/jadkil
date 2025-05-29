@@ -29,21 +29,20 @@ const avatarSrcs: Array<string> = [
 ---
 
 <MainLayout>
-  <AnnouncementBanner
+  <!-- <AnnouncementBanner
     btnId="dismiss-button"
     btnTitle="Explore ScrewFast on GitHub"
     url="https://github.com/mearashadowfax/ScrewFast"
-  />
+  /> -->
 
   <HeroSection
-    title=`Equip Your Projects with <span
-        class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
-    primaryBtn="Start Exploring"
-    primaryBtnURL="/products"
-    secondaryBtn="Contact Sales Team"
-    secondaryBtnURL="/contact"
-    withReview={true}
+    title="Comercializadora, suministros y transporte en México"
+    subTitle="Comercializadora, suministros y transporte en México"
+    primaryBtn="Solicita una cotización"
+    primaryBtnURL="#contaco"
+    secondaryBtn=""
+    secondaryBtnURL=""
+    withReview={false}
     avatars={avatarSrcs}
     rating=`<span class="font-bold">4.8</span> / 5`
     starCount={4}
@@ -53,8 +52,8 @@ const avatarSrcs: Array<string> = [
   />
 
   <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
+    title="Ellos confían en nosotros"
+    subTitle="Más de 15 años de experiencia en el mercado nos respaldan"
     partners={partnersData}
   />
 
@@ -70,28 +69,28 @@ const avatarSrcs: Array<string> = [
     title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "Equipo de Seguridad",
         content:
           "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-        svg: "tools",
+        svg: "shieldUser",
         src: tools,
         alt: "Yellow and black heavy equipment on brown grass field",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Instrumentos de carga y sujeción",
         content:
           "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-        svg: "dashboard",
+        svg: "dolly",
         src: dashboard,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
         second: true,
       },
       {
-        heading: "Robust Features",
+        heading: "Sistema de monitoreo y reporte constante",
         content:
           "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
-        svg: "house",
+        svg: "dashboardMonitor",
         src: construction,
         alt: "Gray metal building frame near tower crane during daytime",
       },
