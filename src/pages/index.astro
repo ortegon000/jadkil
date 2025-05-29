@@ -7,9 +7,11 @@ import ClientsSection from "@components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
-import PricingSection from "@components/sections/pricing/PricingSection.astro";
+// import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
-import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
+import Units from "@/components/sections/landing/Units.astro";
+// import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
+
 import heroImage from "@images/hero-image.avif";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
@@ -134,13 +136,16 @@ const avatarSrcs: Array<string> = [
     ]}
   />
 
-  <PricingSection pricing={pricing} />
+  <Units />
 
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+  <!-- <PricingSection pricing={pricing} /> -->
+
+  <FAQ title="Preguntas frecuentes" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
+    title="Trabajemos juntos"
+    subTitle="Pon tu proyecto en nuestras manos y no te preocupes por nada, nosotros lo llevamos a cabo"
+    
   />
+
 </MainLayout>
