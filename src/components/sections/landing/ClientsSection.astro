@@ -45,12 +45,12 @@ interface Props {
           href={partner.href}
           target="_blank"
           rel="noopener noreferrer"
-          class="flex h-28 w-full items-center justify-center rounded-lg bg-black/10 dark:bg-white/10 p-2"
+          class="flex h-28 w-full items-center justify-center rounded-lg bg-black/10 dark:bg-white/10 p-2 group"
         >
           <Image
             src={partner.icon}
             alt={partner.name || ""}
-            class="h-full w-full object-contain"
+            class="h-full w-full object-contain group-hover:scale-105 transition-all"
           />
         </a>
       ))
