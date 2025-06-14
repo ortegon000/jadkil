@@ -154,7 +154,7 @@ interface Props {
 </section>
 
 <section class="pb-12 max-w-xl w-full mx-auto">
-    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+    <form method="POST" id="form">
 
         <input type="hidden" name="access_key" value="58999c59-a3ec-4189-95e4-9511910b3c36">
         <input type="hidden" name="subject" value="Nuevo mensaje de jadkil.com.mx">
@@ -182,15 +182,52 @@ interface Props {
         <div class="mt-4 grid">
             <AuthBtn title="Enviar mensaje" />
         </div>
+
+        <div id="result" class="mt-4 text-red-500" ></div>
         
     </form>
     
 </section>
 
-<script is:inline data-astro-rerun>
-    document.addEventListener("astro:page-load", () => {
-        const form = document.getElementById("form");
-        form.reset();
-    });
+<script is:inline>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
     
-</script>
+    form.addEventListener('submit', function(e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        result.innerHTML = "Enviando..."
+    
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = "Mensaje enviado correctamente!";
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Algo salio mal!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+    </script>
